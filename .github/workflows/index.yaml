@@ -29,7 +29,7 @@ jobs:
       - name: Commit changes
         continue-on-error: true
         env:
-          GITHUB_TOKEN: ${{ secrets.INDEX_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           cd ${{github.workspace}}
           git config --global user.email jc.manzanares.serrano@gmail.com
