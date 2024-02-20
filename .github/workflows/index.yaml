@@ -33,5 +33,5 @@ jobs:
           token: ${{ secrets.INDEXES_TOKEN }}
           commit_message: "📝 Update markdown indexes"
           branch: main
-          commit_user_name: "GitHub Actions"
-          commit_user_email: "
+          commit_user_name: My GitHub Actions Bot
+          commit_user_email: my-github-actions-bot@example.org
