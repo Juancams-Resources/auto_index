@@ -28,10 +28,12 @@ jobs:
 
       - name: Commit changes
         continue-on-error: true
+        with:
+          import-token: ${{secrets.INDEX_TOKEN}}
         run: |
           cd ${{github.workspace}}
           git config --global user.email jc.manzanares.serrano@gmail.com
           git config --global user.name "Juancams"
           git add .
           git commit -m "auto: Generated markdown indexes"
-          git push https://Juancams-Resources:${GITHUB_TOKEN}@github.com/Juancams-Resources/auto_index.git
+          git push
