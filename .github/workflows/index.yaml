@@ -28,12 +28,10 @@ jobs:
 
       - name: Commit changes
         continue-on-error: true
+        uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          import-token: ${{secrets.INDEX_TOKEN}}
-        run: |
-          cd ${{github.workspace}}
-          git config --global user.email jc.manzanares.serrano@gmail.com
-          git config --global user.name "Juancams"
-          git add .
-          git commit -m "auto: Generated markdown indexes"
-          git push
+          token: ${{ secrets.INDEXES_TOKEN }}
+          commit_message: "📝 Update markdown indexes"
+          branch: main
+          commit_user_name: "GitHub Actions"
+          commit_user_email: "
