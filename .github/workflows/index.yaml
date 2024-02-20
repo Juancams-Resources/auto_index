@@ -36,4 +36,4 @@ jobs:
           git config --global user.name "Juancams"
           git add .
           git commit -m "auto: Generated markdown indexes"
-          git push git push https://Juancams-Resources:${GITHUB_TOKEN}@github.com/Juancams-Resources/auto_index.git
+          git push https://Juancams:${GITHUB_TOKEN}@github.com/Juancams-Resources/auto_index.git
